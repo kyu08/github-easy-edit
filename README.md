@@ -1,10 +1,8 @@
-# github-easy-edit
+# 🖊️ github-easy-edit
 make editing pr description/comment on GitHub easier
 
-# dev memo(後で消す)
-1. document.getElementsByClassName('f5 text-normal')[0].parentNode.getElementsByClassName('timeline-comment-actions') // dropdown-item btn-link js-comment-edit-button で直接とれるかも
-`document.getElementsByClassName('f5 text-normal')[0].parentNode.getElementsByClassName('dropdown-item btn-link js-comment-edit-button')[0].click()`
-1. easyEditButtonのhtmlを定義
-1. easyEditButtonのonclickにb.click()を仕込んでおく
-1. `f5 text-normal`にeasyEditButtonをappendChildする
-    `document.getElementsByClassName('f5 text-normal')[0].appendChild(bb)`
+![demo](https://github.com/kyu08/github-easy-edit/assets/49891479/304692f3-a2c4-429f-ae67-f297e37c75ba)
+
+# ⚠️ caution
+- The functionality only triggers when accessed through clicking on a link in a pull request or issue, or when the page is reloaded. (https://github.com/kyu08/github-easy-edit/issues/2)
+- Contributions are welcome!
