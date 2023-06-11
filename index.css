@@ -1,0 +1,14 @@
+.github-easy-edit-button {
+  color: #768390 !important;
+  display: flex !important;
+  max-width: 60px;
+  height: 20px;
+  font-weight: bold !important;
+  /* border-radius: 2em !important; */
+  /* border: max(1px, 0.0625rem) solid rgba(65,132,228,0.4) !important; */
+  margin: 0 0 0 4px !important;
+  /* padding: auto auto !important; */
+  /* line-height: 18px !important; */
+  text-align: center !important;
+  justify-content: center !important;
+}
