@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["https://github.com/*/pull/*", "https://github.com/*/issues/*"],
       "run_at": "document_idle",
       "js": ["index.js"],
       "css": ["index.css"]
