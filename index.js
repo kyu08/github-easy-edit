@@ -22,12 +22,10 @@ function loop(i) {
   }, 100);
 }
 
-// FIXME: リロードしないと動かない
-setTimeout(() => {
-  for (let i = 0; i < document.getElementsByClassName('f5 text-normal').length; i++) {
-    var actionButton = document.getElementsByClassName('f5 text-normal')[i].parentNode.getElementsByClassName('timeline-comment-action Link--secondary Button--link Button--medium Button')[0];
-    actionButton.click();
-    loop(i);
-    actionButton.click();
-  }
-}, 100);
+// FIXME: リロード・リンク直叩きしないと動かない https://github.com/kyu08/github-easy-edit/issues/2
+for (let i = 0; i < document.getElementsByClassName('f5 text-normal').length; i++) {
+  var actionButton = document.getElementsByClassName('f5 text-normal')[i].parentNode.getElementsByClassName('timeline-comment-action Link--secondary Button--link Button--medium Button')[0];
+  actionButton.click();
+  loop(i);
+  actionButton.click();
+}
